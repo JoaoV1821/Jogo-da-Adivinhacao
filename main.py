@@ -20,7 +20,13 @@ class Jogo: # cria a classe "Jogo"
 
 
 if __name__ == '__main__': # verifica se o contexto de execução do módulo está no escopo principal
+
+    print('-'*20)
+    print('JOGO DA ADIVINHAÇÃO'.center(20))
+    print('-'*20)
     
+    print('>>>> Vou sortear um número entre 1 e 100. Tente adivinhar!')
+
     while True: # looping infinito
         try:
             palpite = int(input('Dê o seu palpite: ')) # atribuição da variável "palpite" à entrada de dados
@@ -37,4 +43,4 @@ if __name__ == '__main__': # verifica se o contexto de execução do módulo est
             break # encerra o looping
 
     print(jogo.resultado) # mostra o resultado
-    
+     
