@@ -38,5 +38,3 @@ if __name__ == '__main__': # verifica se o contexto de execução do módulo est
 
     print(jogo.resultado) # mostra o resultado
     
-    
-      
