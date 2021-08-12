@@ -35,7 +35,7 @@ if __name__ == '__main__': # verifica se o contexto de execução do módulo est
                 raise ValueError('Digite um número maior ou igual 1 ou menor ou igual a 100 !') # se não estiver o programa irá lançar uma exceção notificando o usuário do erro
 
         except Exception as E: # intercepta as exceções 
-            print(f'\033[31m{E}\033[m') # imprime a mensagem da exceçãõ na cor vermelha
+            print(f'\033[31m{E}\033[m') # imprime a mensagem da exceção na cor vermelha
             continue # volta para a atribuição da variável
 
         else: # tratados os erros, o programa irá criar um objeto do tipo Jogo através da atribução à variável "jogo"
