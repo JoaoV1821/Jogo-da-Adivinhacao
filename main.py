@@ -40,7 +40,12 @@ if __name__ == '__main__': # verifica se o contexto de execução do módulo est
 
         else: # tratados os erros, o programa irá criar um objeto do tipo Jogo através da atribução à variável "jogo"
             jogo = Jogo(palpite)
-            break # encerra o looping
+            print(jogo.resultado) # mostra o resultado
 
-    print(jogo.resultado) # mostra o resultado
+            flag = input('Quer jogar novamente? [S/N]: ').upper().strip() # Pergunta se  usuário qur continuar
+
+            if flag == 'S': # Se flag for igual a "S" o programa continuará o looping
+                continue
+            else:
+                break # Se não for igual a "S" o programa encerrará o looping 
      
